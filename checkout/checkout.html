@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Checkout - Mercadinho</title>
+    <link rel="stylesheet" href="/style.css">
+    <style>
+        
+    </style>
+</head>
+<body>
+    <div class="checkout-container">
+        <form id="checkoutForm" class="checkout-form">
+            <div class="checkout-section">
+                <h2>Itens do Pedido</h2>
+                <div id="checkoutItens" class="checkout-itens"></div>
+                <div id="checkoutTotal" class="checkout-total"></div>
+            </div>
+            <div class="checkout-section">
+                <h2>Método de Pagamento</h2>
+                <select id="metodoPagamento" required>
+                    <option value="">Selecione...</option>
+                    <option value="credito">Cartão de Crédito</option>
+                    <option value="debito">Cartão de Débito</option>
+                    <option value="pix">PIX</option>
+                    <option value="boleto">Boleto</option>
+                </select>
+            </div>
+            <div class="checkout-section">
+                <h2>Dados de Entrega</h2>
+                <input type="text" id="nome" placeholder="Nome completo" required>
+                <input type="text" id="endereco" placeholder="Endereço" required>
+                <input type="text" id="numero" placeholder="Número" required>
+                <input type="text" id="bairro" placeholder="Bairro" required>
+                <input type="text" id="cidade" placeholder="Cidade" required>
+                <input type="text" id="cep" placeholder="CEP" required>
+            </div>
+            <button type="submit" class="checkout-btn">Finalizar Pedido</button>
+            <div id="successMsg" class="success-msg" style="display:none;">Pedido realizado com sucesso!</div>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,105 @@
+body {
+    background: linear-gradient(120deg, #4f8cff 0%, #38e7b0 100%);
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#login-form {
+    background: #fff;
+    padding: 40px 32px 32px 32px;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+    width: 100%;
+    max-width: 350px;
+    text-align: center;
+}
+
+#login-form h1 {
+    margin-bottom: 28px;
+    color: #333;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+#form label {
+    display: block;
+    text-align: left;
+    margin-bottom: 6px;
+    margin-top: 18px;
+    color: #555;
+    font-size: 1rem;
+}
+
+#form input[type="text"],
+#form input[type="password"] {
+    width: 100%;
+    padding: 12px 14px;
+    margin-bottom: 8px;
+    border: 1.5px solid #b3b3b3;
+    border-radius: 8px;
+    background: #f7faff;
+    font-size: 1rem;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    outline: none;
+    box-sizing: border-box;
+}
+
+#form input[type="text"]:focus,
+#form input[type="password"]:focus {
+    border-color: #4f8cff;
+    box-shadow: 0 0 0 2px #4f8cff33;
+    background: #fff;
+}
+
+#form button[type="submit"] {
+    width: 100%;
+    padding: 12px 0;
+    margin-top: 18px;
+    background: linear-gradient(90deg, #4f8cff 0%, #38e7b0 100%);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 4px 16px rgba(79,140,255,0.10);
+    transition: background 0.2s, transform 0.1s;
+}
+
+#form button[type="submit"]:hover {
+    background: linear-gradient(90deg, #38e7b0 0%, #4f8cff 100%);
+    transform: translateY(-2px) scale(1.03);
+}
+
+#form p {
+    margin-top: 16px;
+    font-size: 0.97rem;
+    color: #666;
+}
+
+#form a {
+    color: #4f8cff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+#form a:hover {
+    color: #38e7b0;
+    text-decoration: underline;
+}
+
+#output {
+    margin-top: 18px;
+    text-align: center;
+    font-size: 1.1rem;
+}

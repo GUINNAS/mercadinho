@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercadinho</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Mercadinho</a>
+        
+        <nav class="navbar">
+            <a href="/index.html" class="active">Inicio</a>
+            <a href="#">Catálogo</a>
+            <a href="#">Sobre</a>
+            <a href="/perfil/perfil.html" class="profile-icon" title="Acessar perfil" style="margin-left: 20px;">
+            <a href="javascript:void(0);" id="carrinhoBtn" title="Carrinho" style="margin-left: 20px; position: relative;">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="9" cy="21" r="1"/>
+                    <circle cx="20" cy="21" r="1"/>
+                    <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+                </svg>
+            </a>
+            <a href="javascript:void(0);" class="profile-icon" id="profileBtn" title="Acessar perfil" style="margin-left: 20px; position: relative;">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="8" r="4"/>
+                    <path d="M4 20c0-4 4-7 8-7s8 3 8 7"/>
+                </svg>
+            </a>
+            <div id="profileMenu" style="display:none; position:absolute; right:10px; top:60px; background:#fff; border:1px solid #ccc; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.1); min-width:150px; z-index:1000;">
+                <ul style="list-style:none; margin:0; padding:10px;">
+                <li><a href="#" style="text-decoration:none; color:#333; display:block; padding:8px 0;">Meu Perfil</a></li>
+                <li><a href="#" style="text-decoration:none; color:#333; display:block; padding:8px 0;">Pedidos</a></li>
+                <li><a href="/login/login.html" style="text-decoration:none; color:#333; display:block; padding:8px 0;">Sair</a></li>
+            </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="produtos" id="produtos"></div>
+
+    <div id="carrinhoMenu">
+        <button id="carrinhoFechar" title="Fechar">&times;</button>
+        <h2>Meu Carrinho</h2>
+        <div class="carrinho-itens" id="carrinhoItens"></div>
+        <div id="carrinhoResumo" style="margin-top: 16px;">
+            <div id="carrinhoTotal" style="font-weight: bold; font-size: 1.1rem; margin-bottom: 12px;">Total: R$ 0,00</div>
+            <button id="finalizarCompra" style="width: 100%; padding: 10px; background: #2ecc71; color: #fff; border: none; border-radius: 6px; font-size: 1rem; cursor: pointer;">Finalizar Compra</button>
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
